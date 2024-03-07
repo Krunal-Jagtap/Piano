@@ -11,6 +11,7 @@ whiteKeysArray.forEach((element) => {
 
   element.addEventListener("click", () => {
     audio.volume = volumeSlider.value / 100;
+    audio.currentTime = 0; // audio rewind to start 
     audio.play();
   });
 });
@@ -20,6 +21,7 @@ blackKeysArray.forEach((element) => {
 
   element.addEventListener("click", () => {
     audio.volume = volumeSlider.value / 100;
+    audio.currentTime = 0; // audio rewind to start 
     audio.play();
   });
 });
